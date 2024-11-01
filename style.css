@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(201, 201, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#panel{
+    height: 80%;
+    width: 80%;
+    background-color: rgb(246, 250, 39);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+#ptop{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+  
+    
+    align-items: center;
+    
+
+}
+#elem{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#elem h3{
+    font-weight: 900;
+    
+    
+}
+
+
+#box{
+    background-color:black;
+    color: white;
+    padding:10px 20px;
+    border-radius: 10px;
+    font-weight: 400;
+}
+#pbtm{
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color:white;
+
+}
+#box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    text-wrap: wrap;
+    cursor: pointer;
+    
+}
+#box2:hover{
+    background-color: rgb(248, 71, 71);
+    transition: 0.5s;
+}
+.pbottom{
+    color: white;
+    font-size: 30px;
+}

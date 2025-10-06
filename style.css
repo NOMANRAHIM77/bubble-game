@@ -1,97 +1,199 @@
 *{
-    margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    margin: 0;
+    box-sizing: border-box;
 }
 html,body{
-    height: 100%;
-    width: 100%;
-}
-#main{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(201, 201, 105);
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#panel{
-    height: 80%;
-    width: 80%;
-    background-color: rgb(246, 250, 39);
-    border-radius: 10px;
-    overflow: hidden;
-    
+#container{
+    width: 85%;
+    height: 95%;
+    background-color: rgb(238, 0, 0);
 }
-#ptop{
-    height: 80px;
+#level{
+    height: 7%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-around;
-  
-    
-    align-items: center;
-    
-
-}
-#elem{
-    height: 100px;
-    width: 200px;
-    display: flex;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+   background-color: rgb(140, 240, 127);
+    color: black;
+    font-size: 3vw;
+    font-weight: 600;
     display: flex;
     justify-content: center;
-    
-    
-}
-#elem h3{
-    font-weight: 900;
-    
-    
-}
-
-
-#box{
-    background-color:black;
-    color: white;
-    padding:10px 20px;
-    border-radius: 10px;
-    font-weight: 400;
-}
-#pbtm{
-    width: 100%;
-    height: calc(100% - 80px);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+}
+#box1{
+    width: 100%;
+    height: 12%;
+    background-color: black;
     color:white;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26vw;
 }
 #box2{
+    width: 100%;
+    height: 81%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: rgb(140, 240, 127);
+}
+
+.calculations{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     font-size: 17px;
+     gap: 20px;
+}
+.sm-boxes{
+    border-radius: 5px;
+    width: 50px;
     height: 40px;
-    width: 40px;
-    border-radius: 100px;
-    color: white;
-    background-color: black;
-    margin: 10px;
-    text-wrap: wrap;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.boxes{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    
 }
-#box2:hover{
-    background-color: rgb(248, 71, 71);
-    transition: 0.5s;
+.boxes:hover{
+    background-color: rgb(241, 130, 130);
 }
-.pbottom{
+
+.boxes1{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.boxes1:hover{
+    background-color: rgb(241, 130, 130);
+}
+
+
+
+
+#message{
+    font-size: 5vw;
     color: white;
-    font-size: 30px;
+
+}
+
+
+#message1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    color: white;
+
+}
+#help{
+    position: absolute;
+    transform: translate(-95px,+50px);
+    width: 80px;
+    height: 50px;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#restart{
+        position: absolute;
+    transform: translate(-95px,130px);
+    width: 80px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#restart:hover{
+      transition: all ease-in-out 0.4s;
+    background-color: rgb(218, 216, 197);
+}
+#help:hover{
+    transition: all ease-in-out 0.4s;
+    background-color: rgb(218, 216, 197);
+}
+#helpMessage{
+    width: 90vw;
+    height: 90vh;
+    background-color: black;
+    color: white;
+    font-size: 2vw;
+ padding: 10px;
+ line-height: 4vw;
+}
+#special{
+    color: red;
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+#play{
+    background-color: yellow;
+    font-size: 2vw;
+    position: absolute;
+    width: 15vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 10px;
+    margin-left: 30vw;
+    cursor: pointer;
+}
+#message1 img {
+width: 130px;
+height: 130px;
+}
+
+#finalMessage{
+    font-size: 6vw;
+    color: black;
+    font-weight: 400;
+}
+#timeremaining{
+    background-color: red;
+    color: white;
+    font-size: 3vw;
+    padding: 10px;
 }

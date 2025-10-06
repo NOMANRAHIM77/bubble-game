@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main">
-        <div id="panel">
-            <div id="ptop">
-                
-                    <div id="elem">
-                        <h3 >HIT</h3>
-                        <div class="hitval"  id="box">5</div>
-                    </div>
-                    <div id="elem">
-                        <h3>TIMER</h3>
-                        <div  class="time" id="box">60</div>
-                    </div>
-                    <div id="elem">
-                        <h3>SCORE</h3>
-                        <div class="score" id="box">0</div>
-                    </div>
-                
-            </div>
-            <div  id="pbtm">
-                <div id="box2">5</div>
-            </div>
+    <div id="container">
+        <div id="help">Help !</div>
+        <div id="restart" >Restart game!</div>
+        <div id="level">Level 1</div>
+        <div id="box1">
+             <div class="calculations">
+                <p  class="name"  >HIT</p>
+                <div class="sm-boxes   animate__animated   animate__bounceIn       "  id="target" >4</div>
+             </div>
+             <div class="calculations">
+                <p  class="name"  >TIME</p>
+                <div class="sm-boxes" id="timer" >60</div>
+             </div>
+             <div class="calculations">
+                <p  class="name"  >SCORE</p>
+                <div class="sm-boxes"  id="score" >0</div>
+             </div>
         </div>
+        <div id="box2">
+        </div>
+        
     </div>
-    
+
 
     <script src="script.js"></script>
 </body>
